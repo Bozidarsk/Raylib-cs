@@ -1,8 +1,16 @@
 using System.Runtime.InteropServices;
+
 namespace Raylib 
 {
 	public static class Input 
 	{
+		public static bool GetKeyDown(int key) { return IsKeyPressed(key); }
+		public static bool GetKeyUp(int key) { return IsKeyReleased(key); }
+		// /* NOT WORKING */ public static bool GetKey(int key) { return IsKeyUp(key); }
+		public static bool GetMouseDown(int button) { return IsMouseButtonPressed(button); }
+		public static bool GetMouseUp(int button) { return IsMouseButtonReleased(button); }
+		// /* NOT WORKING */ public static bool GetMouse(int button) { return IsMouseButtonDown(button); }
+
 		[DllImport("raylib.dll")] public static extern bool IsKeyPressed(int key);
 		[DllImport("raylib.dll")] public static extern bool IsKeyDown(int key);
 		[DllImport("raylib.dll")] public static extern bool IsKeyReleased(int key);

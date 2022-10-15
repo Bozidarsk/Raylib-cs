@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+
 namespace Raylib 
 {
 	public static class Graphics 
@@ -15,25 +16,25 @@ namespace Raylib
 		{
 			for (int _y = y; _y >= y - radius; _y--) 
 			{
-				for (int _x = x; _x <= x + radius; _x++) { if ((int)Utils.Math2.Distance(
-						new Utils.Vector2((int)x, (int)y),
-						new Utils.Vector2((int)_x, (int)_y)
+				for (int _x = x; _x <= x + radius; _x++) { if ((int)Math.Distance(
+						new Vector2((int)x, (int)y),
+						new Vector2((int)_x, (int)_y)
 					) == radius) { DrawPixel(_x, _y, color); } }
-				for (int _x = x; _x >= x - radius; _x--) { if ((int)Utils.Math2.Distance(
-						new Utils.Vector2((int)x, (int)y),
-						new Utils.Vector2((int)_x, (int)_y)
+				for (int _x = x; _x >= x - radius; _x--) { if ((int)Math.Distance(
+						new Vector2((int)x, (int)y),
+						new Vector2((int)_x, (int)_y)
 					) == radius) { DrawPixel(_x, _y, color); } }
 			}
 
 			for (int _y = y; _y <= y + radius; _y++) 
 			{
-				for (int _x = x; _x <= x + radius; _x++) { if ((int)Utils.Math2.Distance(
-						new Utils.Vector2((int)x, (int)y),
-						new Utils.Vector2((int)_x, (int)_y)
+				for (int _x = x; _x <= x + radius; _x++) { if ((int)Math.Distance(
+						new Vector2((int)x, (int)y),
+						new Vector2((int)_x, (int)_y)
 					) == radius) { DrawPixel(_x, _y, color); } }
-				for (int _x = x; _x >= x - radius; _x--) { if ((int)Utils.Math2.Distance(
-						new Utils.Vector2((int)x, (int)y),
-						new Utils.Vector2((int)_x, (int)_y)
+				for (int _x = x; _x >= x - radius; _x--) { if ((int)Math.Distance(
+						new Vector2((int)x, (int)y),
+						new Vector2((int)_x, (int)_y)
 					) == radius) { DrawPixel(_x, _y, color); } }
 			}
 		}
@@ -42,25 +43,25 @@ namespace Raylib
 		{
 			for (int _y = y; _y >= y - radius; _y--) 
 			{
-				for (int _x = x; _x <= x + radius; _x++) { if ((int)Utils.Math2.Distance(
-						new Utils.Vector2((int)x, (int)y),
-						new Utils.Vector2((int)_x, (int)_y)
+				for (int _x = x; _x <= x + radius; _x++) { if ((int)Math.Distance(
+						new Vector2((int)x, (int)y),
+						new Vector2((int)_x, (int)_y)
 					) <= radius) { DrawPixel(_x, _y, color); } }
-				for (int _x = x; _x >= x - radius; _x--) { if ((int)Utils.Math2.Distance(
-						new Utils.Vector2((int)x, (int)y),
-						new Utils.Vector2((int)_x, (int)_y)
+				for (int _x = x; _x >= x - radius; _x--) { if ((int)Math.Distance(
+						new Vector2((int)x, (int)y),
+						new Vector2((int)_x, (int)_y)
 					) <= radius) { DrawPixel(_x, _y, color); } }
 			}
 
 			for (int _y = y; _y <= y + radius; _y++) 
 			{
-				for (int _x = x; _x <= x + radius; _x++) { if ((int)Utils.Math2.Distance(
-						new Utils.Vector2((int)x, (int)y),
-						new Utils.Vector2((int)_x, (int)_y)
+				for (int _x = x; _x <= x + radius; _x++) { if ((int)Math.Distance(
+						new Vector2((int)x, (int)y),
+						new Vector2((int)_x, (int)_y)
 					) <= radius) { DrawPixel(_x, _y, color); } }
-				for (int _x = x; _x >= x - radius; _x--) { if ((int)Utils.Math2.Distance(
-						new Utils.Vector2((int)x, (int)y),
-						new Utils.Vector2((int)_x, (int)_y)
+				for (int _x = x; _x >= x - radius; _x--) { if ((int)Math.Distance(
+						new Vector2((int)x, (int)y),
+						new Vector2((int)_x, (int)_y)
 					) <= radius) { DrawPixel(_x, _y, color); } }
 			}
 		}

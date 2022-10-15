@@ -25,7 +25,7 @@ class main
 
 		    Graphics.EndDrawing();
 
-		    if (Input.IsKeyPressed(Keyboard.A)) { Console.WriteLine("A"); }
+		    if (Input.GetKeyDown(Keyboard.A)) { Console.WriteLine("A"); }
 		}
 
 		Window.Close();
